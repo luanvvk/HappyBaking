@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Happy Baking</title>
+    <link rel="stylesheet" href="style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="header">
+      <nav>
+          <a href="index.html"><img src="images/logo.jpg" width = "150" height="100"/a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()">Close</i>
+              <ul>
+                <li><a href="">HOME</a></li> 
+                <li><a href="">COURSE</a></li> 
+                <li><a href="">PRODUCT</a></li> 
+                <li><a href="">ABOUT</a></li> 
+                <li><a href="">CONTACT US</a></li>  
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()">Menu</i>
+      </nav>
+    <div class="text-box">
+       <h1>Welcome to Happy Baking</h1>
+       <p>the place where we enjoy our little hobby on the go. Lets start the journey to discover <br>and make wonderful experience you will never ever forget.     
+       </p>
+       <a href="" class="link1">Find out more</a>
+        
+    </div>
+</section>
+
+<!--course-->
+<section class="courses">
+<h1>Online coaching courses</h1>
+<p>We offer a wide range of baking courses which suit all styles and levels </p>
+<div class="row">
+    <div class="courses-col">
+       <h3>Basic</h3>
+       <p>Introduction to baking world</p>
+    </div>
+    <div class="courses-col">
+       <h3>Intermediate</h3>
+       <p>Built up your hobby to the next level</p>
+    </div>
+    <div class="courses-col">
+       <h3>Advance</h3>
+       <p>To become master at your own area</p> 
+    </div>
+</div>
+
+
+</section>
+<!--staff-->
+<section class="staff">
+   <h1>Meet our wonderful mentors</h1>
+   <p>We proudly represent our professional and experience mentors.</p>
+   <div class="row">
+      <div class="staff-col">
+         <img src = "images/staff1.webp" width = "300" height="300">
+         <div class = "layer">
+            <h3>GORDON RAMSAY</h3>
+             
+         </div>
+          
+      </div>
+      <div class="staff-col">
+         <img src = "images/staff2jpg.jpg" width = "300" height="300">
+         <div class = "layer">
+            <h3>MINH BÉO</h3>
+             
+         </div>
+          
+      </div>
+      <div class="staff-col">
+         <img src = "images/staff3.jfif" width = "300" height="300">
+         <div class = "layer">
+            <h3>ANNABELLE</h3>
+             
+         </div>
+          
+      </div>
+       
+   </div>
+    
+</section>
+<!--function to call the menu bar-->   
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script> 
+</body>
+</html>
